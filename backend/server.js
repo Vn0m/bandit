@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.use((req, res) => {
-    res.status(404).sendFile(path.resolve(__dirname, "../frontend/404.html"))
+    res.status(404).sendFile(path.resolve(__dirname, "../frontend/public/404.html"))
 })
 
 const PORT = process.env.PORT || 3001
